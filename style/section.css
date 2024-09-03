@@ -1,7 +1,54 @@
 #featured {
-img {
+    margin-inline: auto;
+    
+div{
+    position: relative;
+ img {
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+    position: relative;
+    opacity: 80%;
+    
+    
 }
+label{
+    height: 96px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font: var(--h1);
+    left: 0px;
+    top: 310px;
+    bottom: 0px;
+    z-index: 1;
+}
+}
+
+div:nth-child(2){
+    img{
+        height: 100%;
+        object-fit: cover;
+         border-radius: 4px;
+         position: relative;
+         opacity: 60%;
+    }
+    label{
+        height: 60px;
+        border: solid 1px beige;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        text-align: left;  
+        left: 0px;
+        top: 142px;
+        font: var(--h3);
+
+    }
+
+}
+
 }
