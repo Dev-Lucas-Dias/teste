@@ -12,9 +12,13 @@ div{
     border-radius: 4px;
     position: relative;
     opacity: 80%;
-    
-    
+    transition:.3s;
 }
+img:hover{
+   outline: 4px solid var(--text-color-secondary);
+   
+}
+
 label{
     height: auto;
     padding-left: 24px;
