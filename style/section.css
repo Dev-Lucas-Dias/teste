@@ -1,6 +1,9 @@
 #featured {
     margin-inline: auto;
-    
+    label:hover{
+        border-inline-start: 10px solid var(--text-color-secondary);
+        transition: 1s;
+    }
 div{
     position: relative;
  img {
@@ -13,12 +16,11 @@ div{
     
 }
 label{
-    height: 96px;
+    height: auto;
     padding-left: 24px;
     padding-right: 24px;
     display: flex;
     align-items: center;
-    justify-content: center;
     position: absolute;
     font: var(--h1);
     left: 0px;
@@ -27,28 +29,87 @@ label{
     z-index: 1;
 }
 }
+    div:nth-child(2){
+        img{
+            height: 100%;
+            object-fit: cover;
+             border-radius: 4px;
+             position: relative;
+             opacity: 50%;
+        } 
+        div:nth-child(1){
+        
+        label{
+            height: auto;
+            width: auto;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-bottom: 12px;
+            display: flex;
+            text-align: auto;
+            align-items:top;
+            left: 0px;
+            top: 128px;
+            font: var(--h3);
+        }
+        }   
+        div:nth-child(2){
 
-div:nth-child(2){
-    img{
-        height: 100%;
-        object-fit: cover;
-         border-radius: 4px;
-         position: relative;
-         opacity: 60%;
+            label{
+                padding-left: 12px;
+                padding-right: 12px;
+                margin-bottom: 12px;
+                height: auto;
+                width: auto;
+                text-align: start;
+                display: flex;
+                align-items:end;
+                left: 0px;
+                top: 128px;
+                font: var(--h3);
+
+        
+            }
+        }
+
+        div:nth-child(3){
+          
+            label{
+                height: auto;
+                width: auto;
+                padding-left: 24px;
+                padding-right: 24px;
+                display: flex;
+                text-align: left;
+                left: 0px;
+                top: 128px;
+                font: var(--h3);
+                padding-left: 12px;
+                padding-right: 12px;
+                margin-bottom: 12px;
+                align-items:end;
+            }
+         }
+
+         div:nth-child(4){
+                
+            label{  
+
+                height: auto;
+                width: auto;
+                padding-left: 24px;
+                padding-right: 24px;
+                display: flex;
+                text-align: auto;
+                left: 0px;
+                top: 128px;
+                font: var(--h3);
+                padding-left: 12px;
+                padding-right: 12px;
+                margin-bottom: 12px;
+                align-items:end;
+            }
+
+         }
     }
-    label{
-        height: 60px;
-        border: solid 1px beige;
-        padding-left: 24px;
-        padding-right: 24px;
-        display: flex;
-        text-align: left;  
-        left: 0px;
-        top: 142px;
-        font: var(--h3);
-
-    }
-
-}
-
 }
