@@ -12,19 +12,24 @@ div{
     border-radius: 4px;
     position: relative;
     opacity: 80%;
-    
-    
+    transition:.3s;
 }
+img:hover{
+   outline: 4px solid var(--text-color-secondary);
+}
+
 label{
-    height: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    height: 96px;
+    width: auto;
+    padding-left:24px;
+    padding-right:24px;
     display: flex;
-    align-items: center;
+    align-items: top;
+    text-align: left;
     position: absolute;
     font: var(--h1);
     left: 0px;
-    top: 310px;
+    top: 320px;
     bottom: 0px;
     z-index: 1;
 }
@@ -38,78 +43,108 @@ label{
              opacity: 50%;
         } 
         div:nth-child(1){
-        
+            
         label{
-            height: auto;
+            height: 60px;
             width: auto;
             padding-left: 12px;
             padding-right: 12px;
             margin-bottom: 12px;
             display: flex;
-            text-align: auto;
+            text-align: left;
             align-items:top;
             left: 0px;
-            top: 128px;
+            top: 140px;
             font: var(--h3);
         }
         }   
         div:nth-child(2){
 
             label{
+                text-align:left;
+                overflow: hidden;
+                height: 61px;
                 padding-left: 12px;
-                padding-right: 12px;
+                padding-right:12px;
                 margin-bottom: 12px;
-                height: auto;
                 width: auto;
-                text-align: start;
                 display: flex;
-                align-items:end;
+                align-items:top;
                 left: 0px;
-                top: 128px;
+                top: 140px;
                 font: var(--h3);
-
-        
             }
+            label:hover{
+                overflow:auto;
+            }
+            
         }
 
         div:nth-child(3){
           
             label{
-                height: auto;
+                height: 60px;
                 width: auto;
-                padding-left: 24px;
-                padding-right: 24px;
+                overflow: hidden;
+                padding-left: 12px;
+                padding-right: 12px;
                 display: flex;
                 text-align: left;
                 left: 0px;
-                top: 128px;
+                top: 140px;
                 font: var(--h3);
-                padding-left: 12px;
-                padding-right: 12px;
                 margin-bottom: 12px;
-                align-items:end;
+                align-items:top;
+            }
+            label:hover{
+                overflow:auto;
             }
          }
 
          div:nth-child(4){
                 
             label{  
-
-                height: auto;
+                overflow: hidden;
+                height: 60px;
                 width: auto;
-                padding-left: 24px;
-                padding-right: 24px;
                 display: flex;
-                text-align: auto;
+                text-align: left;
                 left: 0px;
-                top: 128px;
+                top: 140px;
                 font: var(--h3);
                 padding-left: 12px;
                 padding-right: 12px;
                 margin-bottom: 12px;
-                align-items:end;
+                align-items:top;
+            }
+            label:hover{
+                overflow:auto;
             }
 
          }
+    }
+}
+#most-read{
+    padding: 0;
+    border-top: 1px solid var(--stroke-color);
+    
+    position: relative;
+   
+    div{
+        margin-top: 12px;
+        font: var(--text-span);
+        p:nth-child(2){
+            justify-self: end;
+        }
+    }
+    nav{
+        img{
+            margin-top: 24px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+            position: relative;
+            opacity: 80%;
+        }
     }
 }
