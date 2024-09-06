@@ -14,3 +14,6 @@ grid-template-columns: 1fr 1fr;
 .grid-cols-4{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.container-nav{
+    height: 314px;
+}

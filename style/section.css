@@ -127,24 +127,40 @@ label{
 #most-read{
     padding: 0;
     border-top: 1px solid var(--stroke-color);
+    margin-inline: auto;
     
-    position: relative;
-   
     div{
         margin-top: 12px;
         font: var(--text-span);
         p:nth-child(2){
             justify-self: end;
-        }
-    }
+        }}
     nav{
+        position: relative;
         img{
+            width: 292px;
             margin-top: 24px;
-            height: 100%;
+            height: auto;
             object-fit: cover;
             border-radius: 4px;
             position: relative;
             opacity: 80%;
+            }
+        div{
+            label{
+                border: 1px solid white;
+                height: 66px;
+                width: 292px;
+                padding-left:24px;
+                padding-right:24px;
+                display: flex;
+                align-items: top;
+                text-align: left;
+                position: absolute;
+                font: var(--text);
+                left: 0px;
+                top: 192px;
+            }
         }
-    }
+   }
 }
